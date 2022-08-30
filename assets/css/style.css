@@ -167,6 +167,20 @@ footer {
   padding: 50px 0px;
 }
 
+/* Footer Bottom  */
+.footer-social {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  column-gap: 50px;
+  padding: 20px 0px;
+}
+.footer-social i {
+  font-size: 30px;
+  color: #fff;
+}
+
 /* Responsive stylesheet */
 
 /* Mobile Device */
@@ -174,6 +188,9 @@ footer {
   .hero-section {
     width: 100%;
     overflow: hidden;
+    margin-top: 20px;
+    border-radius: 15px;
+    margin-bottom: 50px;
   }
   .hero {
     display: flex;
@@ -228,7 +245,44 @@ footer {
   .footer-bottom a {
     padding: 15px 0px;
   }
+  .footer-social {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    row-gap: 50px;
+    padding: 30px 0px;
+  }
 }
 /* Tab Device */
 @media only screen and (min-width: 689px) and (max-width: 992px) {
+  .blogs {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 24px;
+    row-gap: 24px;
+  }
+  .footer-section {
+    width: 100% !important;
+    margin: 0 auto;
+  }
+  .footer-section {
+    max-width: 100%;
+  }
+  .blog-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  .manu {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: auto;
+    background: transparent;
+  }
+  .manu a {
+    padding: 10px 30px;
+  }
 }
